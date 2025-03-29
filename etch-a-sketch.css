@@ -5,7 +5,9 @@
 
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .container {
@@ -22,9 +24,21 @@ body{
 
 }
 
-.flex-squares{
+.flex-squares {
     aspect-ratio: 1/1;
     flex: 1 1 0;
-    border: 1px solid black;
+
+}
+
+.grid-button {
+    padding: 16px;
+    margin: 12px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.shaded-flex-squares {
+    background-color: black;
 }
 
