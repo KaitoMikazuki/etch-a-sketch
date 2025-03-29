@@ -6,7 +6,7 @@ function main(){
 
 
 function createGrid(gridSize){
-    // Clones instead of building row from scratch
+    // Builds row from scratch
     for (let i = 0; i < gridSize; i++){
         let row = createRow(gridSize);
         document.querySelector(".container").append(row)
@@ -19,7 +19,7 @@ function createRow(gridSize){
     row.classList.add("flex-row");
     for (let i = 0; i < gridSize; i++){
         row.append(createSquare());
-        console.log("square created");
+        console.log("total squares created")
     }
     return row
 }
@@ -48,8 +48,6 @@ function customizeGridSize (){
 function drawOnSquare (event){
     event.target.classList.add("shaded-flex-squares")
 }
-
-
 
 
 main();
