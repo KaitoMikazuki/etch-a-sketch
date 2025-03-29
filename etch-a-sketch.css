@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* Should be able to align the rows */
+}
+
+.flex-squares{
+    flex: 1 1 0;
+}
+
